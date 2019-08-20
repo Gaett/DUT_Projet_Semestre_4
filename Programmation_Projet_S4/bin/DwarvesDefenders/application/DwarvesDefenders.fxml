@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="704.0" maxWidth="1280.0" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#onPressed" onKeyReleased="#onRelease" prefHeight="704.0" prefWidth="1280.0" styleClass="game_panel" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DwarvesDefenders.application.MenuController">
+   <children>
+      <Label fx:id="startLabel" alignment="TOP_CENTER" layoutX="385.0" layoutY="60.0" prefHeight="257.0" prefWidth="574.0" text="PRESS P TO START" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+      <Canvas fx:id="Map" height="1080.0" onMouseClicked="#onMouseClicked" width="1920.0" />
+      <Canvas fx:id="Game" height="1080.0" onMouseClicked="#onMouseClicked" width="1920.0" />
+      <Canvas fx:id="Towers" height="1080.0" onMouseClicked="#onMouseClicked" width="1920.0" />
+      <Canvas fx:id="LifeBar" height="1080.0" onMouseClicked="#onMouseClicked" width="1920.0" />
+      <GridPane focusTraversable="true" layoutY="606.0" mouseTransparent="true" prefHeight="100.0" prefWidth="316.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="323.42852783203125" minWidth="10.0" prefWidth="278.85711669921875" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="lives" prefHeight="17.0" prefWidth="302.0" />
+            <Label fx:id="remainingMonsters" prefHeight="17.0" prefWidth="281.0" stylesheets="@application.css" text="Remaining monsters :" GridPane.rowIndex="1" />
+            <Label fx:id="nextWaves" prefHeight="17.0" prefWidth="277.0" stylesheets="@application.css" text="Next wave :" GridPane.rowIndex="2" />
+            <GridPane prefHeight="23.0" prefWidth="99.0" GridPane.rowIndex="4">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="76.857177734375" minWidth="10.0" prefWidth="38.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="149.0" minWidth="10.0" prefWidth="149.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="75.57147216796875" minWidth="0.0" prefWidth="0.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label fx:id="gold" prefHeight="17.0" prefWidth="170.0" stylesheets="@application.css" text="0" GridPane.columnIndex="1" />
+                  <ImageView fitHeight="30.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="RIGHT">
+                     <image>
+                        <Image url="@../img/Gold_Coin.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </GridPane>
+            <Label fx:id="score" prefHeight="14.0" prefWidth="282.0" text="SCORE :" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <AnchorPane layoutX="1105.0" layoutY="364.0" maxHeight="340.0" maxWidth="175.0" minHeight="340.0" minWidth="100.0" prefHeight="340.0" prefWidth="175.0" styleClass="build_grid" stylesheets="@application.css">
+         <children>
+            <Button focusTraversable="false" layoutX="19.0" layoutY="14.0" mnemonicParsing="false" onAction="#onButtonLight" prefHeight="64.0" prefWidth="64.0" styleClass="build_button_light" />
+            <Button focusTraversable="false" layoutX="18.0" layoutY="89.0" mnemonicParsing="false" onAction="#onButtonHeavy" prefHeight="64.0" prefWidth="64.0" styleClass="build_button_heavy" />
+            <Button focusTraversable="false" layoutX="19.0" layoutY="164.0" mnemonicParsing="false" onAction="#onButtonMagic" prefHeight="64.0" prefWidth="64.0" styleClass="build_button_magic" />
+            <Button focusTraversable="false" layoutX="1.0" layoutY="239.0" mnemonicParsing="false" onAction="#onButtonBoost" prefHeight="100.0" prefWidth="100.0" styleClass="build_menu" />
+            <Label layoutX="101.0" layoutY="38.0" text="50 Gold" />
+            <Label layoutX="101.0" layoutY="115.0" text="80 Gold" />
+            <Label layoutX="101.0" layoutY="190.0" text="100 Gold" />
+            <Label layoutX="101.0" layoutY="281.0" text="UPGRADE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

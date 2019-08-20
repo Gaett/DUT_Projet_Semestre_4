@@ -1,0 +1,196 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+@font-face {
+    src: url("8_bit_wonder.ttf");
+}
+
+.text {
+    -fx-font-family: "8BIT WONDER";
+    -fx-font-size: 8pt ;
+}
+
+.build_menu {
+   -fx-background-image: url("../img/ui/UI_Button_Build.png");
+   -fx-background-repeat: no-repeat;
+   -fx-background-size: 100 100;
+   -fx-background-color: black;
+  -fx-background-radius: 90;
+  -fx-padding: 0;
+  -fx-font-size: 0;
+}
+
+.game_panel {
+   -fx-background-color: black;
+  -fx-background-image: url("../img/Landscape.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 1280 704;
+}
+
+.option_button {
+  -fx-background-image: url("../img/ui/UI_Button_Options.png");
+  -fx-background-repeat: no-repeat;
+     -fx-background-color: black;
+  -fx-background-size: 100 50;
+}
+
+.menu-button > .arrow-button {
+    -fx-padding: 0;
+}
+
+.menu-button > .arrow-button > .arrow {
+    -fx-padding: 0;
+}
+
+.option_anchor_panel {
+-fx-base : #000000;
+}
+
+.option_panel {
+-fx-background-image: url("../img/ui/UI_Menu_Empty.png");
+-fx-background-repeat: no-repeat;
+}
+
+.score_screen {
+-fx-background-image: url("../img/ui/UI_Menu_Empty.png");
+-fx-background-repeat: no-repeat;
+ -fx-background-color: black;
+-fx-background-size: 600 400;
+}
+
+.back_button {
+  -fx-background-image: url("../img/ui/UI_Button_Back.png");
+  -fx-background-repeat: no-repeat;
+  -fx-background-size: 100 30;
+}
+
+.back_button:pressed {
+  -fx-background-image: url("../img/ui/UI_Button_BackPressed.png");
+  -fx-background-repeat: no-repeat;
+  -fx-background-size: 100 30;
+}
+
+.quit_button{
+  -fx-background-image: url("../img/ui/UI_Button_Quit.png");
+  -fx-background-repeat: no-repeat;
+  -fx-background-size: 100 30;
+}
+
+.quit_button:pressed{
+  -fx-background-image: url("../img/ui/UI_Button_QuitPressed.png");
+  -fx-background-repeat: no-repeat;
+  -fx-background-size: 100 30;
+}
+
+.option_minus_button{
+  -fx-background-image: url("../img/ui/UI_Button_Minus.png");
+  -fx-background-repeat: no-repeat;
+  -fx-background-size: 50 50;
+}
+
+.option_minus_button:pressed {
+  -fx-background-image: url("../img/ui/UI_Button_MinusPressed.png");
+  -fx-background-repeat: no-repeat;
+  -fx-background-size: 50 50;
+}
+
+.option_plus_button{
+  -fx-background-image: url("../img/ui/UI_Button_Plus.png");
+  -fx-background-repeat: no-repeat;
+  -fx-background-size: 50 50;
+}
+
+.option_plus_button:pressed {
+  -fx-background-image: url("../img/ui/UI_Button_PlusPressed.png");
+  -fx-background-repeat: no-repeat;
+  -fx-background-size: 50 50;
+}
+
+.build_grid {
+  -fx-background-image: url("../img/ui/UI_Menu_Build.png");
+  -fx-background-repeat: no-repeat;
+  -fx-background-size: 100 340;
+}
+
+.build_button_light {
+  -fx-background-image: url("../img/ui/UI_Tower_Light.png");
+  -fx-background-repeat: no-repeat;
+  -fx-background-color: black;
+  -fx-background-size: 64 64;
+}
+
+.build_button_light:pressed {
+  -fx-background-image: url("../img/ui/UI_Tower_LightPressed.png");
+  -fx-background-repeat: no-repeat;
+  -fx-background-size: 64 64;
+}
+
+.build_button_heavy {
+  -fx-background-image: url("../img/ui/UI_Tower_Heavy.png");
+  -fx-background-repeat: no-repeat;
+  -fx-background-color: black;
+  -fx-background-size: 64 64;
+}
+
+.build_button_heavy:pressed {
+  -fx-background-image: url("../img/ui/UI_Tower_HeavyPressed.png");
+  -fx-background-repeat: no-repeat;
+  -fx-background-size: 64 64;
+}
+
+.build_button_magic {
+  -fx-background-image: url("../img/ui/UI_Tower_Magic.png");
+  -fx-background-repeat: no-repeat;
+  -fx-background-color: black;
+  -fx-background-size: 64 64;
+}
+
+.build_button_magic:pressed {
+  -fx-background-image: url("../img/ui/UI_Tower_MagicPressed.png");
+  -fx-background-repeat: no-repeat;
+  -fx-background-size: 64 64;
+}
+
+.mini_games_menu {
+  -fx-background-image: url("../img/ui/UI_Menu_Empty.png");
+  -fx-background-repeat: no-repeat;
+  -fx-background-color: black;
+  -fx-background-size: 600 600;
+}
+
+.option_button_dd_menu {
+  -fx-background-image: url("../img/ui/UI_Button_Option.png");
+  -fx-background-repeat: no-repeat;
+  -fx-background-color: black;
+  -fx-background-size: 100 30;
+}
+
+.option_button_dd_menu:pressed {
+  -fx-background-image: url("../img/ui/UI_Button_OptionPressed.png");
+  -fx-background-repeat: no-repeat;
+  -fx-background-size: 100 30;
+}
+
+.play_button_dd_menu {
+  -fx-background-image: url("../img/ui/UI_Button_Play.png");
+  -fx-background-repeat: no-repeat;
+  -fx-background-color: black;
+  -fx-background-size: 100 30;
+}
+
+.play_button_dd_menu:pressed {
+  -fx-background-image: url("../img/ui/UI_Button_PlayPressed.png");
+  -fx-background-repeat: no-repeat;
+  -fx-background-size: 100 30;
+}
+
+.quit_button_dd_menu {
+  -fx-background-image: url("../img/ui/UI_Button_Quit.png");
+  -fx-background-repeat: no-repeat;
+  -fx-background-color: black;
+  -fx-background-size: 100 30;
+}
+
+.quit_button_dd_menu:pressed {
+  -fx-background-image: url("../img/ui/UI_Button_QuitPressed.png");
+  -fx-background-repeat: no-repeat;
+  -fx-background-size: 100 30;
+}
